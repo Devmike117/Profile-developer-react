@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
+@import 'tailwindcss';
+
+@utility container {
+	@apply mx-auto px-4 sm:px-6 lg:px-8;
+	max-width: 900px;
+}
+
+@theme {
+	--font-sans: 'Nunito Sans', sans-serif;
+}
