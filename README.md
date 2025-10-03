@@ -4,7 +4,7 @@
 
 <!-- ![Vista previa del Portafolio](./public/presentacion/desktop-full.png) -->
 
-![Vista previa del Portafolio](./public/presentacion/)<!-- ![Vista previa del Portafolio](./public/presentacion/mobile.png) -->
+![Vista previa del Portafolio](https://raw.githubusercontent.com/Devmike117/Devmike117/refs/heads/main/assets/macbook%20pro%2016.png)<!-- ![Vista previa del Portafolio](./public/presentacion/mobile.png) -->
 
 <div align="center">
   <img src="./public/presentacion/" width="400" />
