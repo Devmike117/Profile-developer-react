@@ -1,9 +1,10 @@
 import { useState } from 'react';
 import { IoLocationOutline } from 'react-icons/io5';
 import { personalInfo } from '../constants';
-import { FaWhatsapp, FaLink } from 'react-icons/fa';
+import { FaLink } from 'react-icons/fa';
 import { SongPlayer } from './SongPlayer';
 import { ContactButton } from './ContactButton';
+import { SteamStatus } from './SteamStatus'; // 👈 importar el nuevo componente
 
 const getIconColor = (name: string): string => {
 	switch (name) {
@@ -17,14 +18,8 @@ const getIconColor = (name: string): string => {
 	}
 };
 
-const getWhatsAppLink = (phone: string): string => {
-	const cleanNumber = phone.replace(/\s+/g, '').replace(/[^\d+]/g, '');
-	const message = encodeURIComponent('¡Hola! Me interesa contactarte para un proyecto');
-	return `https://wa.me/${cleanNumber}?text=${message}`;
-};
-
 export const Header = () => {
-	const { photoSrc, name, location, occupation, overview, phoneNumber, socialLinks, song, otherLinks } = personalInfo;
+	const { photoSrc, name, location, occupation, overview, socialLinks, song, otherLinks } = personalInfo;
 
 	return (
 		<>
@@ -99,20 +94,9 @@ export const Header = () => {
 						))}
 					</div>
 
-					{/* Contacto */}
+					{/* Estado de Steam  */}
 					<div className='flex gap-2 mt-4'>
-						<a
-							href={getWhatsAppLink(phoneNumber)}
-							className='bg-black text-white rounded-md flex gap-1.5 items-center justify-center px-5 font-semibold'
-							target='_blank'
-							aria-label='Contactar por Whatsapp'
-							title='Contactar por Whatsapp'
-						>
-							Contactar
-							<FaWhatsapp size={22} />
-						</a>
-
-						{/* Usamos ContactButton en lugar del botón de copiar email */}
+						<SteamStatus />
 						<ContactButton />
 					</div>
 				</div>

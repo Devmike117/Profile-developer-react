@@ -7,7 +7,6 @@ import {
 	FaRegUser,
 	FaSteam,
 } from 'react-icons/fa';
-import { FaLink, FaXTwitter } from 'react-icons/fa6';
 import { IoGridOutline } from 'react-icons/io5';
 import type { Project } from '../types';
 
@@ -64,9 +63,8 @@ export const personalInfo = {
 			icon: <FaSteam size={26} />,
 		},
 	],
-	contactEmail: 'devmike117@outlook.com',
-	phoneNumber: '+52 71-2140-4915',
-	photoSrc: '/foto.png',
+	phoneNumber: '+',
+	photoSrc: '/foto.webp',
 };
 
 export const tabs = [
@@ -90,9 +88,9 @@ export const tabs = [
 export const projects: Project[] = [
 	{
 		id: 1,
-		name: 'Proyect 1',
+		name: 'Medi-IA',
 		description:
-			'Descripción proximanente',
+			'',
 		technologies: [
 			'1',
 			'2',
@@ -103,7 +101,7 @@ export const projects: Project[] = [
 		],
 		projectUrl: '',
 		githubUrl: '',
-		imageSrc: '/proyect1.png',
+		imageSrc: '/project1.jpg',
 	},
 	{
 		id: 2,
@@ -120,7 +118,7 @@ export const projects: Project[] = [
 		],
 		projectUrl: '',
 		githubUrl: '',
-		imageSrc: '/project2.png',
+		imageSrc: '/project2.jpg',
 	},
 	{
 		id: 3,
@@ -136,7 +134,7 @@ export const projects: Project[] = [
 		],
 		projectUrl: '',
 		githubUrl: '',
-		imageSrc: '/project3.jpeg',
+		imageSrc: '/project3.jpg',
 	},
 	{
 		id: 4,
@@ -186,7 +184,7 @@ export const projects: Project[] = [
 		],
 		projectUrl: '',
 		githubUrl: '',
-		imageSrc: '/project6.jpeg',
+		imageSrc: '/project6.png',
 	},
 ];
 
@@ -397,7 +395,7 @@ export const skills = [
 	},
 	{
 		id: 19,
-		imageSrc: '/unity.png',
+		imageSrc: '/unity.webp',
 		technologyName: 'Unity',
 		level: 'Intermedio',
 		context: 'Game Dev',

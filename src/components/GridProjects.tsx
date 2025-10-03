@@ -8,6 +8,8 @@ interface Props {
 export const GridProjects = ({ setSelectedProject }: Props) => {
 	return (
 		<section className='grid grid-cols-3 gap-2'>
+			{/* espacio para no estar junto con Proyectos */}
+			<div className='col-span-3 h-4' />
 			{projects.map(project => (
 				<div
 					className='flex flex-col gap-2 cursor-pointer relative group overflow-hidden'
