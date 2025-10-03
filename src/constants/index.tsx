@@ -60,11 +60,9 @@ export const personalInfo = {
 			id: 5,
 			name: 'Steam',
 			url: 'https://steamcommunity.com/id/mikedarkness',
-			icon: <FaSteam size={30} />,
-			
+			icon: <FaSteam size={30} />,	
 		},
 	],
-	phoneNumber: '+',
 	photoSrc: '/foto.webp',
 };
 

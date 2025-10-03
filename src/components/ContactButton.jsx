@@ -35,7 +35,7 @@ export const ContactButton = () => {
         body: JSON.stringify(formData)
       });
 
-      const result = await res.json(); // Siempre JSON
+      const result = await res.json(); 
 
       if (res.ok && result.success) {
         setSuccessMessage(result.message || 'Mensaje enviado con éxito!');
