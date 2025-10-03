@@ -6,7 +6,7 @@ export const SteamStatus = () => {
   useEffect(() => {
     const fetchSteamStatus = async () => {
       try {
-        const res = await fetch("/.netlify/functions/sendSteamStatus.js");
+        const res = await fetch("/.netlify/functions/sendSteamStatus");
         const data = await res.json();
         const playerData = data.response.players[0];
         setPlayer(playerData);

@@ -4,7 +4,7 @@ import { personalInfo } from '../constants';
 import { FaLink } from 'react-icons/fa';
 import { SongPlayer } from './SongPlayer';
 import { ContactButton } from './ContactButton';
-import { SteamStatus } from './SteamStatus'; // 👈 importar el nuevo componente
+import { SteamStatus } from './SteamStatus';
 
 const getIconColor = (name: string): string => {
 	switch (name) {
