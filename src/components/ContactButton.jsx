@@ -54,13 +54,14 @@ export const ContactButton = () => {
     <>
       {/* Botón para abrir modal */}
       <button
-        className='bg-sky-500 p-3 rounded-full cursor-pointer flex items-center justify-center shadow-lg hover:bg-sky-600 transition'
+        className='flex items-center justify-center w-[30px] h-[30px] rounded-full bg-sky-700 shadow-lg hover:bg-sky-600 transition p-0'
         title='Enviar mensaje'
         aria-label='Enviar mensaje'
         onClick={handleOpenModal}
       >
-        <MdEmail className='text-white' size={24} />
+        <MdEmail className='text-white' size={30} />
       </button>
+
 
       {/* Modal */}
       {isModalOpen && (

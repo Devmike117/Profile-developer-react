@@ -77,35 +77,38 @@ export const Header = () => {
 						<span className='font-medium text-gray-600'>{location}</span>
 					</div>
 
-					{/* Redes Sociales */}
-					<div className='flex items-center gap-8 mt-4'>
-						{socialLinks.map((link) => (
-							<a
-								href={link.url}
-								key={link.id}
-								target='_blank'
-								rel='noopener noreferrer'
-								aria-label={link.name}
-								title={link.name}
-								style={{ color: getIconColor(link.name) }}
-							>
-								{link.icon}
-							</a>
-						))}
-					</div>
+				{/* Redes Sociales + ContactButton */}
+				<div className="flex items-center gap-4 mt-4">
+				{socialLinks.map((link) => (
+					<a
+					href={link.url}
+					key={link.id}
+					target="_blank"
+					rel="noopener noreferrer"
+					aria-label={link.name}
+					title={link.name}
+					style={{ color: getIconColor(link.name) }}
+					>
+					{link.icon}
+					</a>
+				))}
 
-					{/* Estado de Steam */}
-					<div className="mt-4 flex flex-col sm:flex-row sm:items-start sm:gap-4">
-					{/* SteamStatus */}
-					<div className="flex-shrink-0 w-full sm:w-auto">
-						<SteamStatus />
-					</div>
+				{/* ContactButton */}
+				{/* ContactButton como ítem de redes sociales, tamaño 26px */}
+				<div className="flex-shrink-0 flex items-center justify-center">
+				<ContactButton />
+				</div>
 
-					{/* ContactButton */}
-					<div className="flex-shrink-0 mt-2 sm:mt-0">
-						<ContactButton />
-					</div>
-					</div>
+
+				</div>
+
+			{/* Estado de Steam y botón de contacto separados */}
+			<div className="mt-4 flex flex-col sm:flex-row sm:items-start sm:gap-4">
+				{/* SteamStatus */}
+				<div className="flex-shrink-0 w-full sm:w-auto">
+					<SteamStatus />
+				</div>
+				</div>
 				</div>
 			</div>
 		</>
