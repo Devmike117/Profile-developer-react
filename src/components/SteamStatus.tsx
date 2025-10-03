@@ -6,7 +6,7 @@ export const SteamStatus = () => {
   useEffect(() => {
     const fetchSteamStatus = async () => {
       try {
-        const res = await fetch("/.netlify/functions/sendSteamStatus");
+        const res = await fetch("/.netlify/functions/sendSteamStatus.js");
         const data = await res.json();
         const playerData = data.response.players[0];
         setPlayer(playerData);
@@ -37,10 +37,10 @@ export const SteamStatus = () => {
 
   const getStatusColor = (state: number) => {
     switch (state) {
-      case 1: return "bg-green-500"; // online
-      case 2: return "bg-red-500";   // ocupado
-      case 3: return "bg-yellow-500"; // ausente
-      default: return "bg-gray-400"; // offline u otros
+      case 1: return "bg-green-500"; 
+      case 2: return "bg-red-500";   
+      case 3: return "bg-yellow-500"; 
+      default: return "bg-gray-400"; 
     }
   };
 
@@ -63,7 +63,7 @@ export const SteamStatus = () => {
         <p className="font-semibold text-base">{player.personaname}</p>
         {player.gameextrainfo ? (
           <p className="text-green-600 dark:text-green-400 text-sm">
-            🎮 Jugando {player.gameextrainfo}
+            Jugando {player.gameextrainfo}
           </p>
         ) : (
           <p className="text-gray-600 dark:text-gray-400 text-sm">
