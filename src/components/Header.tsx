@@ -94,10 +94,17 @@ export const Header = () => {
 						))}
 					</div>
 
-					{/* Estado de Steam  */}
-					<div className='flex gap-2 mt-4'>
+					{/* Estado de Steam */}
+					<div className="mt-4 flex flex-col sm:flex-row sm:items-start sm:gap-4">
+					{/* SteamStatus */}
+					<div className="flex-shrink-0 w-full sm:w-auto">
 						<SteamStatus />
+					</div>
+
+					{/* ContactButton */}
+					<div className="flex-shrink-0 mt-2 sm:mt-0">
 						<ContactButton />
+					</div>
 					</div>
 				</div>
 			</div>
