@@ -98,7 +98,7 @@ export const Header = () => {
           <span className="font-medium text-gray-600">{location}</span>
         </div>
 
-        {/* Redes Sociales + ContactButton */}
+        {/* Redes Sociales*/}
         <div className="flex items-center gap-4 mt-4 flex-wrap">
           {socialLinks.map((link) => (
             <a
