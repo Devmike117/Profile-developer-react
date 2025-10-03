@@ -73,7 +73,7 @@ export const SteamStatus = () => {
           {player.gameextrainfo && player.gameid ? (
             <div>
               <p className="text-green-500 dark:text-green-400 text-sm">
-                🎮 Playing {player.gameextrainfo}
+                Playing {player.gameextrainfo}
               </p>
               <img
                 src={`https://cdn.cloudflare.steamstatic.com/steam/apps/${player.gameid}/header.jpg`}

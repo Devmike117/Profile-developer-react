@@ -22,7 +22,7 @@ export const personalInfo = {
 		{
 			id: 1,
 			name: 'Mi Portfolio',
-			url: 'https://portfoliodevmike117.netlify.app/',
+			url: 'https://devmikeportfolio.netlify.app/',
 
 		},
 	],
