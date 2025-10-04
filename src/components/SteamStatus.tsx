@@ -72,7 +72,7 @@ export const SteamStatus = () => {
           {/* Estado de juego */}
           {player.gameextrainfo && player.gameid ? (
             <div>
-              <p className="text-green-500 dark:text-green-400 text-sm">
+              <p className="text-blue-700 dark:text-blue-700 text-sm">
                 Playing {player.gameextrainfo}
               </p>
               <img
