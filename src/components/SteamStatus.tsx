@@ -60,7 +60,7 @@ export const SteamStatus = () => {
               ></span>
             </div>
             <div>
-              <p className="font-semibold text-base text-black dark:text-white">{player.personaname}</p>
+              <p className="font-semibold text-base text-gray-900 dark:text-gray-100">{player.personaname}</p>
               {!player.gameextrainfo && (
                 <p className="text-gray-600 text-sm">
                   {player.personastate === 0 ? "Offline" : "Online"}
