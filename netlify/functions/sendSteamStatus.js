@@ -5,19 +5,27 @@ exports.handler = async function(event, context) {
   const steamID = process.env.STEAM_ID;
 
   const steamURL = `https://api.steampowered.com/ISteamUser/GetPlayerSummaries/v2/?key=${apiKey}&steamids=${steamID}`;
-  const proxyURL = `https://corsproxy.io/?${encodeURIComponent(steamURL)}`;
 
   try {
-    const res = await fetch(proxyURL);
+    const res = await fetch(steamURL);
     const data = await res.json();
+
+    if (!data?.response?.players || data.response.players.length === 0) {
+      return {
+        statusCode: 404,
+        body: JSON.stringify({ error: "No se encontraron jugadores." })
+      };
+    }
+
     return {
       statusCode: 200,
       body: JSON.stringify(data)
     };
   } catch (error) {
+    console.error("Steam fetch error:", error);
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: 'Error al obtener datos de Steam' })
+      body: JSON.stringify({ error: "Error al obtener datos de Steam" })
     };
   }
 };
