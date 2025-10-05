@@ -14,7 +14,16 @@ export const ContactButton = () => {
     setSuccessMessage('');
     setErrorMessage('');
   };
+
   const handleCloseModal = () => setIsModalOpen(false);
+
+  {/* Detectar si es vercel o netlify */}
+  const getEmailEndpoint = () => {
+    if (typeof window !== "undefined" && window.location.hostname.includes("vercel.app")) {
+      return "/api/sendEmail"; 
+    }
+    return "/.netlify/functions/sendEmail"; 
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -29,16 +38,16 @@ export const ContactButton = () => {
     };
 
     try {
-      const res = await fetch('/.netlify/functions/sendEmail', {
+      const res = await fetch(getEmailEndpoint(), {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData)
       });
 
-      const result = await res.json(); 
+      const result = await res.json();
 
       if (res.ok && result.success) {
-        setSuccessMessage(result.message || 'Mensaje enviado con éxito!');
+        setSuccessMessage('¡Tu mensaje ha sido enviado!');
         e.target.reset();
       } else {
         throw new Error(result.error || 'Error al enviar el mensaje');
@@ -61,7 +70,6 @@ export const ContactButton = () => {
       >
         <MdEmail className='text-white' size={30} />
       </button>
-
 
       {/* Modal */}
       {isModalOpen && (
@@ -139,3 +147,4 @@ export const ContactButton = () => {
     </>
   );
 };
+
