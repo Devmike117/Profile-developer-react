@@ -4,9 +4,17 @@ export const SteamStatus = () => {
   const [player, setPlayer] = useState<any>(null);
   const [error, setError] = useState<string | null>(null);
 
+  {/* Detectar si es vercel o netlify */}
+  const getSteamEndpoint = () => {
+    if (typeof window !== "undefined" && window.location.hostname.includes("vercel.app")) {
+      return "/api/sendSteamStatus"; 
+    }
+    return "/.netlify/functions/sendSteamStatus"; 
+  };
+
   const fetchSteamStatus = async () => {
     try {
-      const res = await fetch("/.netlify/functions/sendSteamStatus");
+      const res = await fetch(getSteamEndpoint());
       const data = await res.json();
 
       if (data?.response?.players?.length > 0) {
@@ -25,7 +33,7 @@ export const SteamStatus = () => {
 
   useEffect(() => {
     fetchSteamStatus();
-    const interval = setInterval(fetchSteamStatus, 30000); 
+    const interval = setInterval(fetchSteamStatus, 30000);
     return () => clearInterval(interval);
   }, []);
 
