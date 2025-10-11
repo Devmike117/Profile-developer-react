@@ -13,7 +13,7 @@ exports.handler = async function(event, context) {
     if (!data?.response?.players || data.response.players.length === 0) {
       return {
         statusCode: 404,
-        body: JSON.stringify({ error: "No se encontraron jugadores." })
+        body: JSON.stringify({ error: "No se encontró el jugador." })
       };
     }
 
