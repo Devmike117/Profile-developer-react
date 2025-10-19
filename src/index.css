@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap');
 @import 'tailwindcss';
 
+/* Configurar dark mode como class en Tailwind v4 */
+@variant dark (&:is(.dark, .dark *));
+
 @utility container {
 	@apply mx-auto px-4 sm:px-6 lg:px-8;
 	max-width: 900px;

@@ -28,16 +28,16 @@ export const ModalProject = ({
 					/>
 				</div>
 
-				<div className='p-4 py-6 bg-white flex flex-col gap-4 rounded flex-[2.5]'>
+				<div className='p-4 py-6 bg-white dark:bg-slate-800 flex flex-col gap-4 rounded flex-[2.5] transition-colors duration-300'>
 					<div className='flex justify-between items-center'>
-						<h2 className='text-2xl font-bold'>
+						<h2 className='text-2xl font-bold dark:text-white'>
 							{selectedProject.name}
 						</h2>
 
 						<div className='flex items-center gap-3'>
 							<a
 								href={selectedProject.githubUrl}
-								className='ml-4 text-black'
+								className='ml-4 text-black dark:text-white'
 								target='_blank'
 								title='ver en Github'
 								rel='noreferrer'
@@ -46,7 +46,7 @@ export const ModalProject = ({
 							</a>
 							<a
 								href={selectedProject.projectUrl}
-								className='text-black'
+								className='text-black dark:text-white'
 								target='_blank'
 								title='ver Proyecto'
 								rel='noreferrer'
@@ -56,12 +56,12 @@ export const ModalProject = ({
 						</div>
 					</div>
 
-					<p className='text-gray-600 text-sm sm:text-base md:text-lg flex-1 md:flex-none'>
+					<p className='text-gray-600 dark:text-gray-300 text-sm sm:text-base md:text-lg flex-1 md:flex-none'>
 						{selectedProject.description}
 					</p>
 
 					<div className='space-y-3'>
-						<p className='font-semibold flex items-center gap-2'>
+						<p className='font-semibold dark:text-white flex items-center gap-2'>
 							<IoMdCode size={22} />
 							Tecnologías Utilizadas:
 						</p>
@@ -70,7 +70,7 @@ export const ModalProject = ({
 							{selectedProject.technologies.map((t, index) => (
 								<span
 									key={index}
-									className='bg-gray-100 rounded-full px-3 py-1 text-balance text-xs font-semibold'
+									className='bg-gray-100 dark:bg-slate-700 dark:text-white rounded-full px-3 py-1 text-balance text-xs font-semibold'
 								>
 									{t}
 								</span>

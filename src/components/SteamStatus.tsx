@@ -47,11 +47,11 @@ export const SteamStatus = () => {
   };
 
   return (
-    <div className="p-4 rounded-2xl border border-white/30 dark:border-white/30 bg-white/10 dark:bg-white/10 backdrop-blur-xl shadow-[0_4px_30px_rgba(255,255,255,0.1)] transition-all duration-300 w-full sm:w-80 hover:border-white/50 hover:shadow-[0_4px_40px_rgba(255,255,255,0.2)] bg-gradient-to-br from-white/10 to-white/5">
+    <div className="p-4 rounded-2xl border border-white/30 dark:border-gray-600/30 bg-white/10 dark:bg-slate-800/30 backdrop-blur-xl shadow-[0_4px_30px_rgba(255,255,255,0.1)] dark:shadow-[0_4px_30px_rgba(0,0,0,0.3)] transition-all duration-300 w-full sm:w-80 hover:border-white/50 dark:hover:border-gray-500/50 hover:shadow-[0_4px_40px_rgba(255,255,255,0.2)] dark:hover:shadow-[0_4px_40px_rgba(0,0,0,0.4)] bg-gradient-to-br from-white/10 to-white/5 dark:from-slate-800/10 dark:to-slate-800/5">
       {!player && !error && (
-        <p className="text-gray-500 text-sm">Cargando estado de Steam...</p>
+        <p className="text-gray-500 dark:text-gray-400 text-sm">Cargando estado de Steam...</p>
       )}
-      {error && <p className="text-red-500 text-sm">{error}</p>}
+      {error && <p className="text-red-500 dark:text-red-400 text-sm">{error}</p>}
 
       {player && (
         <div className="flex flex-col gap-3">
@@ -68,9 +68,9 @@ export const SteamStatus = () => {
               ></span>
             </div>
             <div>
-              <p className="font-semibold text-base text-gray-900 dark:text-gray-900">{player.personaname}</p>
+              <p className="font-semibold text-base text-gray-900 dark:text-white">{player.personaname}</p>
               {!player.gameextrainfo && (
-                <p className="text-gray-600 text-sm">
+                <p className="text-gray-600 dark:text-gray-300 text-sm">
                   {player.personastate === 0 ? "Offline" : "Online"}
                 </p>
               )}
@@ -80,7 +80,7 @@ export const SteamStatus = () => {
           {/* Estado de juego */}
           {player.gameextrainfo && player.gameid ? (
             <div>
-              <p className="text-blue-700 dark:text-blue-700 text-sm">
+              <p className="text-blue-700 dark:text-blue-400 text-sm">
                 Playing {player.gameextrainfo}
               </p>
               <img
@@ -90,7 +90,7 @@ export const SteamStatus = () => {
               />
             </div>
           ) : (
-            <p className="text-gray-500 text-xs italic">Not playing right now</p>
+            <p className="text-gray-500 dark:text-gray-400 text-xs italic">Not playing right now</p>
           )}
         </div>
       )}

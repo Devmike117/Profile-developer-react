@@ -8,38 +8,38 @@ export const GridExperience = () => {
 		<section className='grid grid-cols-1 gap-5 mt-5'>
 			{experience.map(exp => (
 				<div
-					className='bg-white p-5 rounded-lg border border-gray-300 flex flex-col gap-3'
+					className='bg-white dark:bg-slate-800 p-5 rounded-lg border border-gray-300 dark:border-gray-700 flex flex-col gap-3 transition-colors duration-300'
 					key={exp.id}
 				>
 					<div className='flex flex-col md:flex-row justify-between md:items-center gap-2'>
 						{/* Posición y Nombre de empresa */}
 						<div className='flex flex-col gap-1'>
-							<h3 className='text-xl font-bold'>{exp.position}</h3>
-							<p className='flex items-center gap-2 text-gray-400 font-medium'>
+							<h3 className='text-xl font-bold dark:text-white'>{exp.position}</h3>
+							<p className='flex items-center gap-2 text-gray-400 dark:text-gray-300 font-medium'>
 								<FaRegBuilding />
 								{exp.companyName}
 							</p>
 						</div>
 						{/* Rango de tiempo y Ubicación */}
 						<div className='flex flex-col gap-1'>
-							<p className='flex items-center gap-2 text-gray-400 font-medium md:text-sm'>
+							<p className='flex items-center gap-2 text-gray-400 dark:text-gray-300 font-medium md:text-sm'>
 								<CiCalendarDate />
 								{exp.timeRange}
 							</p>
-							<p className='flex items-center gap-2 text-gray-400 font-medium md:text-sm'>
+							<p className='flex items-center gap-2 text-gray-400 dark:text-gray-300 font-medium md:text-sm'>
 								<IoLocationOutline />
 								{exp.companyLocation}
 							</p>
 						</div>
 					</div>
 
-					<p className='text-gray-700'>{exp.description}</p>
+					<p className='text-gray-700 dark:text-gray-300'>{exp.description}</p>
 
 					<ul className='flex flex-wrap gap-2'>
 						{exp.technologiesUsed.map((t, index) => (
 							<li
 								key={index}
-								className='text-black border border-gray-300 rounded-full px-3 py-1 text-xs font-bold'
+								className='text-black dark:text-white border border-gray-300 dark:border-gray-600 rounded-full px-3 py-1 text-xs font-bold'
 							>
 								{t}
 							</li>

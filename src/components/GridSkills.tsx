@@ -20,20 +20,20 @@ export const GridSkills = () => {
 						/>
 					</div>
 
-					<div className='flex flex-col gap-2'>
-						<p className='text-lg font-bold'>
-							{skill.technologyName}
-						</p>
+				<div className='flex flex-col gap-2'>
+					<p className='text-lg font-bold dark:text-gray-900'>
+						{skill.technologyName}
+					</p>
 
-						<div className='flex items-center gap-3'>
-							<span className='text-xs text-white bg-black p-1 px-3 rounded-full'>
-								{skill.level}
-							</span>
-							<span className='text-xs text-gray-600'>
-								{skill.context}
-							</span>
-						</div>
+					<div className='flex items-center gap-3'>
+						<span className='text-xs text-white bg-black dark:bg-gray-800 p-1 px-3 rounded-full'>
+							{skill.level}
+						</span>
+						<span className='text-xs text-gray-600 dark:text-gray-700'>
+							{skill.context}
+						</span>
 					</div>
+				</div>
 				</div>
 			))}
 		</section>

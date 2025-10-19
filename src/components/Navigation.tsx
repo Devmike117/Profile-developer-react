@@ -10,7 +10,7 @@ export const Navigation = ({
 	setTabActiveIndex,
 }: Props) => {
 	return (
-		<div className='flex mt-12 border-b border-gray-200'>
+		<div className='flex mt-12 border-b border-gray-200 dark:border-gray-700'>
 			{tabs.map(tab => (
 				<button
 					key={tab.id}
@@ -21,7 +21,7 @@ export const Navigation = ({
 						className={`justify-center flex gap-2 items-center border-b-2 pb-1 ${
 							tabActiveIndex === tab.id
 								? 'text-sky-500 border-b-sky-500'
-								: 'text-gray-500 border-b-transparent'
+								: 'text-gray-500 dark:text-gray-400 border-b-transparent'
 						}`}
 					>
 						<tab.icon size={24} />

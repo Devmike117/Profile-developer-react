@@ -46,14 +46,14 @@ export const SongPlayer = () => {
       >
         <button
           onClick={togglePlay}
-          className="w-8 h-8 flex items-center justify-center rounded-full bg-black text-white shadow-lg hover:bg-gray-500 transition relative z-10"
+          className="w-8 h-8 flex items-center justify-center rounded-full bg-black dark:bg-gray-700 text-white shadow-lg hover:bg-gray-500 dark:hover:bg-gray-600 transition relative z-10"
         >
           {isPlaying ? <FaPause /> : <FaPlay />}
         </button>
       </div>
 
       <div>
-        <p className="text-gray-700 font-medium text-sm sm:text-base">
+        <p className="text-gray-700 dark:text-gray-300 font-medium text-sm sm:text-base">
           {personalInfo.song.title} - {personalInfo.song.artist}
         </p>
       </div>

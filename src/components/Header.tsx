@@ -50,27 +50,27 @@ export const Header = () => {
 
       {/* Información Personal */}
       <div className="flex flex-col gap-3 flex-1">
-        <h1 className="text-balance font-bold text-2xl sm:text-3xl">{name}</h1>
-        <p className="text-balance text-base sm:text-lg text-gray-600">{occupation}</p>
+        <h1 className="text-balance font-bold text-2xl sm:text-3xl dark:text-white">{name}</h1>
+        <p className="text-balance text-base sm:text-lg text-gray-600 dark:text-gray-400">{occupation}</p>
 
         {/* Stats */}
         <div className="flex gap-10 items-center mt-2">
           <div className="flex flex-col items-center">
-            <span className="font-bold text-xl sm:text-2xl">15</span>
-            <span className="text-gray-600 text-sm sm:text-base">Proyectos</span>
+            <span className="font-bold text-xl sm:text-2xl dark:text-white">15</span>
+            <span className="text-gray-600 dark:text-gray-400 text-sm sm:text-base">Proyectos</span>
           </div>
           <div className="flex flex-col items-center">
-            <span className="font-bold text-xl sm:text-2xl">4+</span>
-            <span className="text-gray-600 text-sm sm:text-base">Años Exp.</span>
+            <span className="font-bold text-xl sm:text-2xl dark:text-white">4+</span>
+            <span className="text-gray-600 dark:text-gray-400 text-sm sm:text-base">Años Exp.</span>
           </div>
           <div className="flex flex-col items-center">
-            <span className="font-bold text-xl sm:text-2xl">30+</span>
-            <span className="text-gray-600 text-sm sm:text-base">Tecnologías</span>
+            <span className="font-bold text-xl sm:text-2xl dark:text-white">30+</span>
+            <span className="text-gray-600 dark:text-gray-400 text-sm sm:text-base">Tecnologías</span>
           </div>
         </div>
 
         {/* Bio */}
-        <p className="text-balance text-gray-500 text-sm sm:text-base mt-2">{overview}</p>
+        <p className="text-balance text-gray-500 dark:text-gray-400 text-sm sm:text-base mt-2">{overview}</p>
 
         {/* Otros enlaces */}
         {otherLinks?.length > 0 && (
@@ -81,7 +81,7 @@ export const Header = () => {
                 href={link.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center text-sm text-blue-700 hover:underline gap-1"
+                className="flex items-center text-sm text-blue-700 dark:text-blue-400 hover:underline gap-1"
               >
                 <FaLink size={14} /> {link.name}
               </a>
@@ -94,8 +94,8 @@ export const Header = () => {
 
         {/* Ubicación */}
         <div className="flex items-center gap-3 mt-4">
-          <IoLocationOutline size={22} />
-          <span className="font-medium text-gray-600">{location}</span>
+          <IoLocationOutline size={22} className="dark:text-gray-300" />
+          <span className="font-medium text-gray-600 dark:text-gray-300">{location}</span>
         </div>
 
         {/* Redes Sociales*/}
