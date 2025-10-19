@@ -65,7 +65,7 @@ export const Header = () => {
           </div>
           <div className="flex flex-col items-center">
             <span className="font-bold text-xl sm:text-2xl">30+</span>
-            <span className="text-gray-600 text-sm sm:text-base">Tecnologías y herramientas</span>
+            <span className="text-gray-600 text-sm sm:text-base">Tecnologías</span>
           </div>
         </div>
 
