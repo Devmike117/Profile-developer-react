@@ -77,6 +77,13 @@ export const SteamStatus = () => {
             </div>
           </div>
 
+          {/* última conexión */}
+          {player.lastlogoff && (
+            <p className="text-gray-500 dark:text-gray-400 text-xs italic">
+              Última conexión: {new Date(player.lastlogoff * 1000).toLocaleString()}
+            </p>
+          )}
+
           {/* Estado de juego */}
           {player.gameextrainfo && player.gameid ? (
             <div>
