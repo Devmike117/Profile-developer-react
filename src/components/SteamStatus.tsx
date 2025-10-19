@@ -80,7 +80,9 @@ export const SteamStatus = () => {
           {/* última conexión */}
           {player.lastlogoff && (
             <p className="text-gray-500 dark:text-gray-400 text-xs italic">
-              Última conexión: {new Date(player.lastlogoff * 1000).toLocaleString()}
+              Última conexión: {new Date(player.lastlogoff * 1000).toLocaleDateString('es-MX', { 
+                timeZone: 'America/Mexico_City'
+              })}
             </p>
           )}
 
