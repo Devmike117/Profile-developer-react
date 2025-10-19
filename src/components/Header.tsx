@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { IoLocationOutline } from 'react-icons/io5';
 import { FaLink } from 'react-icons/fa';
 import { personalInfo } from '../constants';
@@ -6,26 +6,47 @@ import { SongPlayer } from './SongPlayer';
 import { ContactButton } from './ContactButton';
 import { SteamStatus } from './SteamStatus';
 
-const getIconColor = (name: string): string => {
+const getIconColor = (name: string, isDarkMode: boolean): string => {
   switch (name) {
     case 'Instagram':
       return '#E1306C';
     case 'Pinterest':
       return '#E60023';
     case 'Github':
-      return '#000000';
+      return isDarkMode ? '#FFFFFF' : '#000000';
     case 'LinkedIn':
       return '#0077B5';
     case 'Steam':
-      return '#171A21';
+      return isDarkMode ? '#C7D5E0' : '#171A21';
     case 'SteamAccent':
       return '#00ADEE';
     default:
-      return '#000000';
+      return isDarkMode ? '#FFFFFF' : '#000000';
   }
 };
 
 export const Header = () => {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  {/** Detectar si el modo oscuro está activo */}
+  useEffect(() => {
+    const checkDarkMode = () => {
+      setIsDarkMode(document.documentElement.classList.contains('dark'));
+    };
+
+    {/* Verificar al montar */}
+    checkDarkMode();
+
+    {/* Cambios en la clase del html */}
+    const observer = new MutationObserver(checkDarkMode);
+    observer.observe(document.documentElement, {
+      attributes: true,
+      attributeFilter: ['class'],
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
   const {
     photoSrc,
     name,
@@ -108,7 +129,7 @@ export const Header = () => {
               rel="noopener noreferrer"
               aria-label={link.name}
               title={link.name}
-              style={{ color: getIconColor(link.name) }}
+              style={{ color: getIconColor(link.name, isDarkMode) }}
               className="text-2xl hover:opacity-80 transition"
             >
               {link.icon}
