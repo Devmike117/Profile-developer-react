@@ -38,6 +38,11 @@ function App() {
 					/>
 				)}
 			</main>
+			{/* Footer */}
+			<footer className="w-full py-4 text-center relative z-10 backdrop-blur-lg bg-white/30 border-t border-white/20 shadow-lg">
+			© Devmike117.{' '}
+			{new Date().toLocaleDateString('es-MX', { timeZone: 'America/Mexico_City', year: 'numeric' })}
+			</footer>
 		</div>
 	);
 }
