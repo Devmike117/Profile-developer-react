@@ -89,7 +89,7 @@ export const projects: Project[] = [
 		id: 1,
 		name: 'Medi-IA',
 		description:
-			'medi-IA es una herramienta web que detecta texto en imágenes capturadas desde la cámara (como etiquetas de medicamentos) además de ofrecer búsqueda por voz, lo analiza con inteligencia artificial para extraer información farmacológica relevante en tiempo real. Ideal para consultas rápidas, entornos médicos o usuarios que buscan accesibilidad inmediata.',
+			'Herramienta web para consulta farmacológica Detecta detalles de medicamentos capturados desde la cámara y permite búsqueda por voz. Utiliza inteligencia artificial para extraer información relevante en tiempo real, facilitando consultas rápidas y mejorando la accesibilidad en entornos médicos.',
 		technologies: [
 			'JavaScript',
 			'HTML5',
@@ -107,7 +107,7 @@ export const projects: Project[] = [
 		id: 2,
 		name: 'Quitafondo',
 		description:
-			'Eliminar Fondo de Imágenes con IA es una aplicación de escritorio que permite borrar el fondo de cualquier imagen de forma automática y sin conexión, utilizando redes neuronales. Con una interfaz gráfica intuitiva, ofrece edición manual, compatibilidad con múltiples formatos y preservación de calidad, todo sin subir tus archivos a terceros.',
+			'Aplicación de escritorio que elimina fondos de imágenes automáticamente y sin conexión, usando redes neuronales. Ofrece edición manual, compatibilidad con múltiples formatos y preserva la calidad sin subir archivos a terceros.',
 		technologies: [
 			'Python',
 			'tkinter',
@@ -123,7 +123,7 @@ export const projects: Project[] = [
 		id: 3,
 		name: 'Verificador de correos electrónicos',
 		description:
-			'Verificar Correos Electrónicos es una herramienta de escritorio desarrollada en Python que audita direcciones de correo en tiempo real. Evalúa sintaxis, servidores MX, autenticación SPF/DKIM/DMARC, presencia en listas negras y detecta posibles intentos de phishing mediante análisis de similitud de dominios. Todo se ejecuta localmente, sin comprometer la privacidad del usuario.',
+			'Herramienta de escritorio en Python que audita direcciones de correo en tiempo real. Evalúa sintaxis, servidores, autenticación y posibles intentos de phishing, todo de forma local y sin comprometer la privacidad del usuario.',
 		technologies: [
 			'Python',
 			'tkinter',
@@ -141,7 +141,7 @@ export const projects: Project[] = [
 		id: 4,
 		name: 'Sistema de Cifrado Web para PDFs',
 		description:
-			'Sistema de Cifrado Web para PDFs permite cifrar archivos PDF. El usuario puede elegir entre distintos algoritmos de cifrado:\n\n• ECC\n• RSA\n• AES\n• ChaCha20\n Ideal para proteger documentos sensibles en entornos educativos, profesionales o personales.',
+			'Sistema que permite cifrar archivos PDF utilizando algoritmos como ECC, RSA, AES y ChaCha20. Ideal para proteger documentos sensibles en contextos educativos, profesionales o personales.',
 		technologies: [
 			'Python',
 			'Flask',
@@ -161,7 +161,7 @@ export const projects: Project[] = [
 		id: 5,
 		name: 'Modelo de Detección de Rostros',
 		description:
-			'Modelo de Detección de Rostros permite identificar rostros humanos en tanto en vivo como en imágenes estáticas mediante modelos de visión por computadora (previamente entrenado). Utiliza algoritmos de detección Haar Cascade y redes neuronales convolucionales (CNN) para localizar y marcar rostros en tiempo real. Ideal para pruebas locales, sistemas de autenticación o análisis biométrico básico.',
+			'Identifica rostros humanos en tiempo real y en imágenes estáticas usando algoritmos Haar Cascade y redes neuronales. Funciona localmente y es útil para pruebas biométricas básicas y sistemas de autenticación.',
 		technologies: [
 			'Python',
 			'OpenCV',
@@ -180,7 +180,7 @@ export const projects: Project[] = [
 		id: 6,
 		name: 'Generador de Códigos QR',
 		description:
-			'Es una herramienta que permite crear códigos QR personalizados de manera rápida y sencilla. Los usuarios pueden ingresar texto, enlaces o información de contacto, y el generador crea un código QR escaneable en segundos sin necesidad de una conexión a Internet. Ideal para compartir información de manera eficiente y moderna.',
+			'Herramienta que permite crear códigos QR personalizados en segundos, a partir de texto, enlaces o datos de contacto. Funciona sin conexión a internet y es ideal para compartir información de forma rápida y moderna.',
 		technologies: [
 			'Python',
 			'tkinter',
@@ -203,10 +203,10 @@ export const experience = [
 		companyLocation: 'Mexico, Estado de México',
 		description:
 			'Residencia profesional donde se está desarrollando un sistema de arrestos administrativos para centros de comando y control.\n\n' +
-			'• Diseño e implementación de un sistema modular que permite registrar, buscar y gestionar personas arrestadas mediante algoritmos de identificación biométrica facial y escaneo de huellas dactilares, que generan landmarks faciales por cada persona y se transforman en plantillas biométricas cifradas almacenadas en bases de datos, evitando duplicidades o confusiones.\n\n' +
-			'• Arquitectura orientada a eliminar la dependencia de registros manuales, reduciendo errores humanos y acelerando la toma de decisiones operativas.\n\n' +
-			'• A través de la implementación del algoritmo de reconocimiento facial, se logra detectar reincidencias y actualizar historiales de forma automatizada. Además, el sistema permite generar reportes PDF personalizados de cada persona arrestada, incluyendo un código QR único vinculado a sus datos personales.\n\n' +
-			'• Dashboard analítico para visualizar estadísticas en tiempo real, generación de reportes PDF con firma digital y control de acceso para administradores.\n\n' +
+			'• El sistema permite registrar, buscar y gestionar personas arrestadas mediante biometría facial y escaneo de huellas, generando plantillas cifradas que evitan duplicidades.\n\n' +
+			'• Su arquitectura elimina registros manuales, reduce errores y agiliza decisiones operativas.\n\n' +
+			'• Detecta reincidencias con el algoritmo de reconocimiento facial, actualiza historiales y genera reportes PDF con firma digital y código QR único.\n\n' +
+			'• Dashboard analítico para visualizar estadísticas en tiempo real y control de acceso para administradores.\n\n' +
 			'• Operación local bajo estándares de seguridad y privacidad, cumpliendo con normativas nacionales e internacionales en protección de datos personales y biométricos.',
 
 		technologiesUsed: [
