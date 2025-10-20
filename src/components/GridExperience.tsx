@@ -3,6 +3,7 @@ import { experience } from '../constants';
 import { CiCalendarDate } from 'react-icons/ci';
 import { IoLocationOutline } from 'react-icons/io5';
 
+
 export const GridExperience = () => {
 	return (
 		<section className='grid grid-cols-1 gap-5 mt-5'>
@@ -33,7 +34,12 @@ export const GridExperience = () => {
 						</div>
 					</div>
 
-					<p className='text-gray-700 dark:text-gray-300'>{exp.description}</p>
+					<p
+					className='text-gray-700 dark:text-gray-300 whitespace-pre-line'
+					>
+					{exp.description}
+					</p>
+
 
 					<ul className='flex flex-wrap gap-2'>
 						{exp.technologiesUsed.map((t, index) => (
