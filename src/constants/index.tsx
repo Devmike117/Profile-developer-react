@@ -411,6 +411,15 @@ export const skills = [
 	},
 	{
 		id: 17,
+		imageSrc: '/googlecloud.png',
+		technologyName: 'Google Cloud',
+		level: 'Básico',
+		context: 'Cloud',
+		bgColor: '#E3F2FD',
+		borderColor: '#90CAF9',
+	},
+	{
+		id: 18,
 		imageSrc: '/mongodb.png',
 		technologyName: 'MongoDB',
 		level: 'Intermedio',
@@ -419,7 +428,7 @@ export const skills = [
 		borderColor: '#A5D6A7',
 	},
 	{
-		id: 18,
+		id: 19,
 		imageSrc: '/postgresql.png',
 		technologyName: 'PostgreSQL',
 		level: 'Intermedio',
@@ -428,7 +437,7 @@ export const skills = [
 		borderColor: '#90CAF9',
 	},
 	{
-		id: 19,
+		id: 20,
 		imageSrc: '/unity.webp',
 		technologyName: 'Unity',
 		level: 'Intermedio',
@@ -437,7 +446,7 @@ export const skills = [
 		borderColor: '#E0E0E0',
 	},
 	{
-		id: 20,
+		id: 21,
 		imageSrc: '/csharp.png',
 		technologyName: 'C#',
 		level: 'Básico',
@@ -446,7 +455,7 @@ export const skills = [
 		borderColor: '#A5D6A7',
 	},
 	{
-		id: 21,
+		id: 22,
 		imageSrc: '/storybook.png',
 		technologyName: 'Storybook',
 		level: 'Básico',
@@ -455,7 +464,7 @@ export const skills = [
 		borderColor: '#F8BBD9',
 	},
 	{
-		id: 22,
+		id: 23,
 		imageSrc: '/fastapi.png',
 		technologyName: 'FastAPI',
 		level: 'Intermedio',
@@ -464,7 +473,7 @@ export const skills = [
 		borderColor: '#80CBC4',
 	},
 	{
-		id: 23,
+		id: 24,
 		imageSrc: '/elasticsearch.png',
 		technologyName: 'Elasticsearch',
 		level: 'Básico',
@@ -473,7 +482,7 @@ export const skills = [
 		borderColor: '#80DEEA',
 	},
 	{
-		id: 24,
+		id: 25,
 		imageSrc: '/netlify.png',
 		technologyName: 'Netlify',
 		level: 'Avanzado',
@@ -481,4 +490,22 @@ export const skills = [
 		bgColor: '#E8F5E8',
 		borderColor: '#81C784',
 	},
+	{
+		id : 26,
+		imageSrc: '/git.png',
+		technologyName: 'Git',
+		level: 'Avanzado',
+		context: 'version control',
+		bgColor: '#F3E5F5',
+		borderColor: '#E1BEE7',
+	},
+	{
+		id: 27,
+		imageSrc: '/githubb.png',
+		technologyName: 'GitHub',
+		level: 'Avanzado',
+		context: 'version control',
+		bgColor: '#E8E8E8',
+		borderColor: '#B0B0B0',
+	}
 ];

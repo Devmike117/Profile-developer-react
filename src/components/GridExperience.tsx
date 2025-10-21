@@ -40,7 +40,6 @@ export const GridExperience = () => {
 					{exp.description}
 					</p>
 
-
 					<ul className='flex flex-wrap gap-2'>
 						{exp.technologiesUsed.map((t, index) => (
 							<li
