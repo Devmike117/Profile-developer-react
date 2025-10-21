@@ -6,10 +6,19 @@
 
 ![Vista previa del Portafolio](https://raw.githubusercontent.com/Devmike117/Devmike117/refs/heads/main/assets/macbook%20pro%2016.png)<!-- ![Vista previa del Portafolio](./public/presentacion/mobile.png) -->
 
-<div align="center">
-  <img src="./public/presentacion/" width="400" />
-  <img src="./public/presentacion/" width="250" />
-</div>
+<table align="center">
+  <tr>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/Devmike117/Devmike117/refs/heads/main/assets/phone.png" width="200" alt="Vista móvil" />
+      <br /><strong>Vista móvil</strong>
+    </td>
+    <td align="center">
+      <img src="https://raw.githubusercontent.com/Devmike117/Devmike117/refs/heads/main/assets/ipad.png" width="350" alt="Vista tablet" />
+      <br /><strong>Vista tablet</strong>
+    </td>
+  </tr>
+</table>
+
 
 ## 🧠 Inspiración
 
