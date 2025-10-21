@@ -77,8 +77,8 @@ export const SteamStatus = () => {
             </div>
           </div>
 
-          {/* última conexión */}
-          {player.lastlogoff && (
+          {/* última conexión - unicamente cuando este offline */}
+          {player.lastlogoff && player.personastate === 0 && (
             <p className="text-gray-500 dark:text-gray-400 text-xs italic">
               Última conexión: {new Date(player.lastlogoff * 1000).toLocaleDateString('es-MX', { 
                 timeZone: 'America/Mexico_City'
