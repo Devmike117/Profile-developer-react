@@ -27,9 +27,9 @@ export const personalInfo = {
 		},
 	],
 	song: {
-    title: 'Birds of a Feather',
-    artist: 'Billie Eilish',
-    url: 'https://raw.githubusercontent.com/Devmike117/music1/main/BIRDS%20OF%20A%20FEATHER%20-%20Billie%20Eilish.mp3', 
+    title: 'Private',
+    artist: 'The Neighbourhood',
+    url: 'https://raw.githubusercontent.com/Devmike117/music1/main/Private-The%20Neighbourhood.mp3', 
   },
 	socialLinks: [
 		{

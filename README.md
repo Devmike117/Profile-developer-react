@@ -1,10 +1,9 @@
 # Profile de devmike117
 
 
+<!-- ![Vista previa del Portafolio] -->
 
-<!-- ![Vista previa del Portafolio](./public/presentacion/desktop-full.png) -->
-
-![Vista previa del Portafolio](https://raw.githubusercontent.com/Devmike117/Devmike117/refs/heads/main/assets/macbook%20pro%2016.png)<!-- ![Vista previa del Portafolio](./public/presentacion/mobile.png) -->
+![Vista previa del Portafolio](https://raw.githubusercontent.com/Devmike117/Devmike117/refs/heads/main/assets/macbook%20pro%2016.png)
 
 <table align="center">
   <tr>
