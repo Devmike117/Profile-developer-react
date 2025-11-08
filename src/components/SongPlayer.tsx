@@ -40,7 +40,6 @@ export const SongPlayer = () => {
     <div className="flex items-center gap-3 mt-4">
       <div
         className="rounded-full p-1 relative"
-        // colores de the Neighbourhood
         style={{
           background: `conic-gradient(#E5E5E5 ${angle}deg, #444 ${angle}deg)`,
         }}

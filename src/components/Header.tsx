@@ -114,10 +114,10 @@ export const Header = () => {
         {song?.url && <div className="mt-4"><SongPlayer /></div>}
 
         {/* Ubicación */}
-        <div className="flex items-center gap-3 mt-4">
+        {/*<div className="flex items-center gap-3 mt-4">
           <IoLocationOutline size={22} className="dark:text-gray-300" />
           <span className="font-medium text-gray-600 dark:text-gray-300">{location}</span>
-        </div>
+        </div>*/}
 
         {/* Redes Sociales*/}
         <div className="flex items-center gap-4 mt-4 flex-wrap">

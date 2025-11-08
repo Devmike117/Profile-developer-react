@@ -17,7 +17,7 @@ export const personalInfo = {
 	location: 'México, Estado de México',
 	occupation: 'Full-Stack Developer & Traveling Tech Enthusiast',
 	overview:
-		'Estudiante de Ingeniería en Sistemas Computacionales (a pocos meses de graduarme), especializado en desarrollo web, software y ciberseguridad. Domino tecnologías  de front-end y back-end, buscando proyectos que me reten tanto a nivel personal como profesional.',
+		'Estudiante de Ing. en Sistemas Computacionales, especializado en desarrollo web, software y ciberseguridad. Domino tecnologías  de front-end y back-end, buscando proyectos que me reten tanto a nivel personal como profesional.',
 	otherLinks: [
 		{
 			id: 1,
