@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Moon, Sun } from 'lucide-react';
+{/* Librería nieve: comentar cuando no sea epoca navideña :) */}
+import Snowfall from 'react-snowfall'; 
 import {
 	GridExperience,
 	GridProjects,
@@ -7,6 +9,7 @@ import {
 	Header,
 	ModalProject,
 	Navigation,
+	ChristmasLights,
 } from './components';
 import type { Project } from './types';
 
@@ -14,8 +17,8 @@ function App() {
 	const [tabActiveIndex, setTabActiveIndex] = useState<number>(1);
 	const [selectedProject, setSelectedProject] =
 		useState<Project | null>(null);
-	
-	// Inicialización del modo oscuro desde localStorage
+
+	{/* Iniciar el modo oscuro desde localStorage */}
 	const [darkMode, setDarkMode] = useState<boolean>(() => {
 		document.documentElement.classList.remove('dark');
 		
@@ -29,7 +32,7 @@ function App() {
 		return isDark;
 	});
 
-	// Sincronizar cambios del modo oscuro con localStorage y DOM
+	{/* Sincronizar cambios del modo oscuro con localStorage y DOM */}
 	useEffect(() => {
 		localStorage.setItem('darkMode', JSON.stringify(darkMode));
 		const html = document.documentElement;
@@ -42,6 +45,21 @@ function App() {
 
 	return (
 		<div className='bg-slate-50 dark:bg-slate-950 min-h-screen transition-colors duration-300'>
+			{/* Inicio de contenido navideño */}
+			
+			{/* Luces navideñas */}
+			<ChristmasLights darkMode={darkMode} />
+
+			{/* Efecto de nieve */}
+			<Snowfall
+				color={darkMode ? "white" : "#1e293b"}
+				snowflakeCount={100}
+				speed={[0.5, 3.0]}
+				wind={[-0.5, 2.0]}
+				radius={[0.5, 3.0]}
+			/>
+			{/* Fin de contenido navideño */}
+			
 			<main className='container py-10'>
 				{/* Botón para alternar modo oscuro/claro */}
 				<div className='flex justify-end mb-6'>
