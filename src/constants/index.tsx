@@ -21,7 +21,7 @@ export const personalInfo = {
 		'Estudiante de Ing. en Sistemas Computacionales. Trabajo en desarrollo web, software y temas de ciberseguridad.',
 	hobbies: [
 		'Aparte de ser un "geek" disfruto lo siguiente:',
-		'Viajar a distintas partes de mi País.',
+		'Viajar a distintas partes de México.',
 		'Tocar instrumentos: Guitarra eléctrica, Bateria y Piano \n(tengo canciones que nunca saldrán a la luz).',
 		'Tener tiempo de calidad con amig@s y familia.',
 		'Prácticar deportes: Skateboarding y BMX.',
