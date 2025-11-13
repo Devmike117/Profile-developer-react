@@ -22,6 +22,8 @@ const getIconColor = (name: string, isDarkMode: boolean): string => {
       return '#00ADEE';
     default:
       return isDarkMode ? '#FFFFFF' : '#000000';
+    case 'Twitch':
+      return '#9146FF';
   }
 };
 

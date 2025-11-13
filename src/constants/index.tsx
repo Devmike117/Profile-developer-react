@@ -6,6 +6,7 @@ import {
 	FaRegBookmark,
 	FaRegUser,
 	FaSteam,
+	FaTwitch,
 } from 'react-icons/fa';
 import { IoGridOutline } from 'react-icons/io5';
 import type { Project } from '../types';
@@ -25,8 +26,11 @@ export const personalInfo = {
 		'Tener tiempo de calidad con amig@s y familia.',
 		'Prácticar deportes: Skateboarding y BMX.',
 		'Asistir a conciertos de mis bandas favoritas ♡.',
+		// 'Querer muy bonito, tenia una novia con la cual compartía mi vida y mis sueños, tenia planes a futuro con ella (casarme), 
+		// pero por cosas de la vida ya no estamos juntos, aun así le deseo lo mejor y siempre la llevaré en mi corazón, gracias a ella pude mejorar ♡',
+		// ok se me salio un poco la mano con esto
+		// Y que viva the neighbourhood jaja ok no, bueno si pero no lo pongo :D
 	],
-	//Y que viva the neighbourhood jaja ok no, bueno si pero no lo pongo :D
 	otherLinks: [
 		{
 			id: 1,
@@ -36,9 +40,9 @@ export const personalInfo = {
 		},
 	],
 	song: {
-    title: 'Private',
+    title: 'Stuck with Me',
     artist: 'The Neighbourhood',
-    url: 'https://raw.githubusercontent.com/Devmike117/music1/main/Private-The%20Neighbourhood.mp3', 
+    url: 'https://raw.githubusercontent.com/Devmike117/music1/main/Stuck%20with%20Me%20-%20The%20Neighbourhood.mp3', 
   },
 	socialLinks: [
 		{
@@ -70,6 +74,12 @@ export const personalInfo = {
 			name: 'Steam',
 			url: 'https://steamcommunity.com/id/mikedarkness',
 			icon: <FaSteam size={30} />,	
+		},
+		{
+			id: 6,
+			name: 'Twitch',
+			url: 'https://www.twitch.tv/devmike117',
+			icon: <FaTwitch size={30} />,
 		},
 	],
 	photoSrc: '/foto.webp',
