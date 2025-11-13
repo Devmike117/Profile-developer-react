@@ -26,6 +26,7 @@ export const personalInfo = {
 		'Prácticar deportes: Skateboarding y BMX.',
 		'Asistir a conciertos de mis bandas favoritas ♡.',
 	],
+	//Y que viva the neighbourhood jaja ok no, bueno si pero no lo pongo :D
 	otherLinks: [
 		{
 			id: 1,
