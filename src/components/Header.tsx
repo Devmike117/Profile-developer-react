@@ -53,6 +53,7 @@ export const Header = () => {
     location,
     occupation,
     overview,
+    hobbies,
     socialLinks,
     song,
     otherLinks,
@@ -92,6 +93,14 @@ export const Header = () => {
 
         {/* Bio */}
         <p className="text-balance text-gray-500 dark:text-gray-400 text-sm sm:text-base mt-2">{overview}</p>
+
+        {/* Hobbies */}
+        <p className="text-balance text-gray-500 dark:text-gray-400 text-sm sm:text-base mt-2">{hobbies[0]}</p>
+        <ul className="text-balance text-gray-500 dark:text-gray-400 text-sm sm:text-base mt-2 list-disc list-inside">
+          {hobbies.slice(1).map((hobby, index) => (
+            <li key={index} className="whitespace-pre-line">{hobby}</li>
+          ))}
+        </ul>
 
         {/* Otros enlaces */}
         {otherLinks?.length > 0 && (

@@ -17,7 +17,15 @@ export const personalInfo = {
 	location: 'México, Estado de México',
 	occupation: 'Full-Stack Developer & Traveling Tech Enthusiast',
 	overview:
-		'Estudiante de Ing. en Sistemas Computacionales, especializado en desarrollo web, software y ciberseguridad. Domino tecnologías  de front-end y back-end, buscando proyectos que me reten tanto a nivel personal como profesional.',
+		'Estudiante de Ing. en Sistemas Computacionales. Trabajo en desarrollo web, software y temas de ciberseguridad.',
+	hobbies: [
+		'Aparte de ser un "geek" disfruto lo siguiente:',
+		'Viajar a distintas partes de mi País.',
+		'Tocar instrumentos: Guitarra eléctrica, Bateria y Piano \n(tengo canciones que nunca saldrán a la luz).',
+		'Tener tiempo de calidad con amig@s y familia.',
+		'Prácticar deportes: Skateboarding y BMX.',
+		'Asistir a conciertos de mis bandas favoritas ♡.',
+	],
 	otherLinks: [
 		{
 			id: 1,
@@ -197,10 +205,10 @@ export const projects: Project[] = [
 export const experience = [
 	{
 		id: 1,
-		position: 'Frontend Developer',
+		position: 'Front-end developer',
 		timeRange: 'Sep 2025 – Actual',
-		companyName: 'Centro de Comando y Control (C2).',
-		companyLocation: 'Mexico, Estado de México',
+		companyName: 'Gobierno de México. Centro de comando y control c2.',
+		companyLocation: 'Mexico',
 		description:
 			'Residencia profesional donde se está desarrollando un sistema de arrestos administrativos para centros de comando y control.\n\n' +
 			'• El sistema permite registrar, buscar y gestionar personas arrestadas mediante biometría facial y escaneo de huellas, generando plantillas cifradas que evitan duplicidades.\n\n' +
