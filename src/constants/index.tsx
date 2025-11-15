@@ -20,15 +20,13 @@ export const personalInfo = {
 	overview:
 		'Estudiante de Ing. en Sistemas Computacionales. Trabajo en desarrollo web, software y temas de ciberseguridad.',
 	hobbies: [
-		'Aparte de ser un "geek" disfruto lo siguiente:',
-		'Viajar a distintas partes de México.',
-		'Tocar instrumentos: Guitarra eléctrica, Bateria y Piano \n(tengo canciones que nunca saldrán a la luz).',
+		'Hobbies:',
+		'Viajar a distintas partes.',
+		'Tocar instrumentos: Guitarra eléctrica, Bateria y Piano.',
 		'Tener tiempo de calidad con amig@s y familia.',
 		'Prácticar deportes: Skateboarding y BMX.',
 		'Asistir a conciertos de mis bandas favoritas ♡.',
-		// 'Querer muy bonito, tenia una novia con la cual compartía mi vida y mis sueños, tenia planes a futuro con ella (casarme), 
-		// pero por cosas de la vida ya no estamos juntos, aun así le deseo lo mejor y siempre la llevaré en mi corazón, gracias a ella pude mejorar ♡',
-		// ok se me salio un poco la mano con esto
+
 		// Y que viva the neighbourhood jaja ok no, bueno si pero no lo pongo :D
 	],
 	otherLinks: [
@@ -219,7 +217,7 @@ export const experience = [
 		position: 'Front-end developer',
 		timeRange: 'Sep 2025 – Actual',
 		companyName: 'Gobierno de México. Centro de comando y control c2.',
-		companyLocation: 'Mexico',
+		companyLocation: 'México',
 		description:
 			'Residencia profesional donde se está desarrollando un sistema de arrestos administrativos para centros de comando y control.\n\n' +
 			'• El sistema permite registrar, buscar y gestionar personas arrestadas mediante biometría facial y escaneo de huellas, generando plantillas cifradas que evitan duplicidades.\n\n' +

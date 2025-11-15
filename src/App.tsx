@@ -44,21 +44,25 @@ function App() {
 	}, [darkMode]);
 
 	return (
-		<div className='bg-slate-50 dark:bg-slate-950 min-h-screen transition-colors duration-300'>
-			{/* Inicio de contenido navideño */}
-			
-			{/* Luces navideñas */}
-			<ChristmasLights darkMode={darkMode} />
-
+		<>
+			{/* Tema navideño inicio*/}
 			{/* Efecto de nieve */}
-			<Snowfall
-				color={darkMode ? "white" : "#1e293b"}
-				snowflakeCount={100}
-				speed={[0.5, 3.0]}
-				wind={[-0.5, 2.0]}
-				radius={[0.5, 3.0]}
-			/>
-			{/* Fin de contenido navideño */}
+			<div className="fixed inset-0 pointer-events-none z-40">
+				<Snowfall
+					color={darkMode ? "white" : "#1e293b"}
+					snowflakeCount={100}
+					speed={[0.5, 3.0]}
+					wind={[-0.5, 2.0]}
+					radius={[0.5, 3.0]}
+				/>
+			</div>
+			{/* efecto de nieve fin*/}
+
+			<div className='bg-slate-50 dark:bg-slate-950 min-h-screen transition-colors duration-300'>
+				{/* Luces de navidad inicio*/}
+				<ChristmasLights darkMode={darkMode} />
+				{/* Luces de navidad fin*/}
+				{/* Tema navideño fin*/}
 			
 			<main className='container py-10'>
 				{/* Botón para alternar modo oscuro/claro */}
@@ -103,6 +107,7 @@ function App() {
 				{new Date().toLocaleDateString('es-MX', { timeZone: 'America/Mexico_City', year: 'numeric' })}
 			</footer>
 		</div>
+		</>
 	);
 }
 
