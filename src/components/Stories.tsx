@@ -74,6 +74,25 @@ const Stories = () => {
   const currentMedia = currentStory ? currentStory.media[currentMediaIndex] : null;
   const totalMedia = currentStory ? currentStory.media.length : 0;
 
+  // Precargar el siguiente medio 
+  useEffect(() => {
+    // precargar cuando se abre el modal
+    if (!currentStory || selectedStory === null) return;
+    
+    const nextMediaIndex = currentMediaIndex + 1;
+    if (nextMediaIndex < currentStory.media.length) {
+      const nextMedia = currentStory.media[nextMediaIndex];
+      if (nextMedia.type === 'video') {
+        const video = document.createElement('video');
+        video.preload = 'auto';
+        video.src = nextMedia.url;
+      } else if (nextMedia.type === 'image') {
+        const img = new Image();
+        img.src = nextMedia.url;
+      }
+    }
+  }, [currentStory, currentMediaIndex, selectedStory]);
+
   const handleNext = () => {
     if (selectedStory === null || !currentStory) return;
     
@@ -159,6 +178,7 @@ const Stories = () => {
                     src={story.avatar}
                     alt={story.username}
                     className="w-full h-full rounded-full object-cover"
+                    loading="lazy"
                   />
                 </div>
               </div>
@@ -249,6 +269,7 @@ const Stories = () => {
                 src={currentMedia.url}
                 alt="Story"
                 className="w-full h-full object-contain"
+                loading="eager"
               />
             ) : currentMedia?.type === 'video' ? (
               <video
@@ -257,6 +278,7 @@ const Stories = () => {
                 className="w-full h-full object-contain"
                 autoPlay
                 playsInline
+                preload="auto"
                 onPlay={() => setIsVideoPlaying(true)}
                 onTimeUpdate={(e) => {
                   const video = e.currentTarget;
@@ -269,6 +291,7 @@ const Stories = () => {
                   handleNext();
                 }}
                 onPause={() => setIsVideoPlaying(false)}
+                onLoadStart={() => setProgress(0)}
               />
             ) : null}
 
