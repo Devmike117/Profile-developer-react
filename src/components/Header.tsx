@@ -5,6 +5,7 @@ import { personalInfo } from '../constants';
 import { SongPlayer } from './SongPlayer';
 import { ContactButton } from './ContactButton';
 import { SteamStatus } from './SteamStatus';
+import { Stories } from './Stories';
 
 const getIconColor = (name: string, isDarkMode: boolean): string => {
   switch (name) {
@@ -55,7 +56,7 @@ export const Header = () => {
     location,
     occupation,
     overview,
-    hobbies,
+    //hobbies,
     socialLinks,
     song,
     otherLinks,
@@ -97,12 +98,12 @@ export const Header = () => {
         <p className="text-balance text-gray-500 dark:text-gray-400 text-sm sm:text-base mt-2">{overview}</p>
 
         {/* Hobbies */}
-        <p className="text-balance text-gray-500 dark:text-gray-400 text-sm sm:text-base mt-2">{hobbies[0]}</p>
+        {/* <p className="text-balance text-gray-500 dark:text-gray-400 text-sm sm:text-base mt-2">{hobbies[0]}</p>
         <ul className="text-balance text-gray-500 dark:text-gray-400 text-sm sm:text-base mt-2 list-disc list-inside">
           {hobbies.slice(1).map((hobby, index) => (
             <li key={index} className="whitespace-pre-line">{hobby}</li>
           ))}
-        </ul>
+        </ul> */}
 
         {/* Otros enlaces */}
         {otherLinks?.length > 0 && (
@@ -149,6 +150,11 @@ export const Header = () => {
 
           {/* ContactButton */}
           <ContactButton />
+        </div>
+
+        {/* Historias */}
+        <div className="mt-4">
+          <Stories />
         </div>
 
         {/* Estado de Steam */}

@@ -12,3 +12,22 @@
 @theme {
 	--font-sans: 'Nunito Sans', sans-serif;
 }
+
+/* Ocultar el scrollbar */
+.scrollbar-hide {
+	-ms-overflow-style: none;
+	scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+	display: none;
+}
+
+/* Cursor de historia */
+.cursor-w-resize {
+	cursor: w-resize;
+}
+
+.cursor-e-resize {
+	cursor: e-resize;
+}

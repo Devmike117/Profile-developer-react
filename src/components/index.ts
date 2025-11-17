@@ -6,3 +6,4 @@ export * from './GridExperience';
 export * from './GridSkills';
 export * from './SongPlayer';
 export * from './ChristmasLights';
+export * from './Stories';
