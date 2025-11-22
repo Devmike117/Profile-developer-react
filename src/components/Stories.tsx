@@ -24,6 +24,8 @@ const stories: Story[] = [
       { type: 'video', url: 'https://res.cloudinary.com/dxbv5ygmo/video/upload/v1763353561/video1_lexbcd.mp4' },
       { type: 'video', url: 'https://res.cloudinary.com/dxbv5ygmo/video/upload/v1763353561/video2_jqzrwp.mp4' },
       { type: 'video', url: 'https://res.cloudinary.com/dxbv5ygmo/video/upload/v1763353558/video3_kjpycf.mp4' },
+      { type: 'image', url: 'https://res.cloudinary.com/dxbv5ygmo/image/upload/v1763354263/naturaleza_jqgpoi.jpg' },
+      { type: 'image', url: 'https://res.cloudinary.com/dxbv5ygmo/image/upload/v1763835014/starts_wl0uii.webp' },
     ],
     timestamp: "Hace mucho tiempo",
   },
@@ -32,6 +34,7 @@ const stories: Story[] = [
     username: "Random",
     avatar: "https://res.cloudinary.com/dxbv5ygmo/image/upload/v1763354263/random_kulrni.jpg",
     media: [
+      { type: 'video', url: 'https://res.cloudinary.com/dxbv5ygmo/video/upload/v1763835027/remember_coxl1j.mp4'},
       { type: 'video', url: 'https://res.cloudinary.com/dxbv5ygmo/video/upload/v1763353560/video4_uqdyuw.mp4' },
       { type: 'video', url: 'https://res.cloudinary.com/dxbv5ygmo/video/upload/v1763353567/video5_ddqbei.mp4' },
     ],
@@ -54,6 +57,7 @@ const stories: Story[] = [
     username: "Conciertos",
     avatar: "https://res.cloudinary.com/dxbv5ygmo/image/upload/v1763354264/concierto_q31vdd.jpg",
     media: [
+      { type: 'image', url: 'https://res.cloudinary.com/dxbv5ygmo/image/upload/v1763354264/concierto_q31vdd.jpg' },
       { type: 'video', url: 'https://res.cloudinary.com/dxbv5ygmo/video/upload/v1763353557/video6_uqvtmt.mp4' },
       { type: 'video', url: 'https://res.cloudinary.com/dxbv5ygmo/video/upload/v1763353564/video7_eif11w.mp4' },
       { type: 'video', url: 'https://res.cloudinary.com/dxbv5ygmo/video/upload/v1763353558/video8_grsc92.mp4' },
